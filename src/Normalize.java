@@ -8,7 +8,7 @@ public class Normalize {
         String stringAfterRegex = string.replaceAll(regex, " ");
 
         StringBuilder result = new StringBuilder();                      // isLetterOrDigit(char ch) - определяет, является ли символ буквой или цифрой.
-        // В принципе, с этим методом, применять регулярку нет смысла,
+                                                                         // В принципе, с этим методом, применять регулярку нет смысла,
         for (int i = 0; i < stringAfterRegex.length(); i++) {            // но раз уж я начал показывать решение через регулярку, то не стал исключать из решения фильтрацию исходной строки
             char currentChar = stringAfterRegex.charAt(i);
             if(Character.isLetterOrDigit(currentChar)) {
